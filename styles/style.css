@@ -17,7 +17,8 @@ img {
 
 /* second row style */
 .vertical_collage img {
-    height: 49.5%;
+    /* height: 49.5%; */
+    height: calc((100% - 5px)/2);
 }
 
 /* third row style */
