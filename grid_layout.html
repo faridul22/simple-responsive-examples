@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid layout setUp</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            grid-template-rows: 100px 300px 300px 100px;
+        }
+
+        .all_layout {
+            background-color: lightsalmon;
+        }
+
+        #header_layout,
+        #footer_layout {
+            grid-column: span 4;
+        }
+
+        #nav_layout,
+        #main_layout {
+            grid-row: span 2;
+        }
+
+        #main_layout {
+            grid-column: span 2;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Grid layout </h1>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="all_layout" id="header_layout">
+                    <h1>Header</h1>
+                </div>
+                <div class="all_layout" id="nav_layout">
+                    <h1>Navbar</h1>
+                </div>
+                <div class="all_layout" id="main_layout">
+                    <h1>Main layout</h1>
+                </div>
+                <div class="all_layout" id="">
+                    <h1>Sidebar</h1>
+                </div>
+                <div class="all_layout" id="">
+                    <h1>Advertisement</h1>
+                </div>
+                <div class="all_layout" id="footer_layout">
+                    <h1>Footer</h1>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
