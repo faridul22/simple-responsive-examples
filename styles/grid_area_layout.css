@@ -43,3 +43,17 @@
         "footer footer footer footer"
     ;
 }
+
+/* Small device responsive */
+@media screen and (max-width:576px) {
+    .container {
+        grid-template-areas:
+            "header"
+            "navbar"
+            "sidebar"
+            "advertise"
+            "main"
+            "footer"
+        ;
+    }
+}
