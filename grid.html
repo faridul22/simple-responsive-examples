@@ -10,11 +10,11 @@
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 20px;
-            grid-template-rows: repeat(3, 200px) 20px;
+            grid-template-rows: repeat(3, 200px) 50px 50px;
         }
 
         .box {
-            background-color: lightslategray;
+            background-color: gray;
         }
 
         #box_1 {
@@ -24,6 +24,10 @@
         #box_11,
         #box_12 {
             grid-column: span 3;
+        }
+
+        .red_box {
+            background-color: tomato;
         }
     </style>
 </head>
@@ -36,11 +40,11 @@
             <div class="box" id="box_3">Box-3</div>
             <div class="box" id="box_4">Box-4</div>
             <div class="box" id="box_5">Box-5</div>
-            <div class="box" id="box_6">Box-6</div>
-            <div class="box" id="box_7">Box-7</div>
+            <div class="box red_box" id="box_6">Box-6</div>
+            <div class="box red_box" id="box_7">Box-7</div>
             <div class="box" id="box_8">Box-8</div>
-            <div class="box" id="box_9">Box-9</div>
-            <div class="box" id="box_10">Box-10</div>
+            <div class="box red_box" id="box_9">Box-9</div>
+            <div class="box red_box" id="box_10">Box-10</div>
             <div class="box" id="box_11">Box-11</div>
             <div class="box" id="box_12">Box-12</div>
         </div>
