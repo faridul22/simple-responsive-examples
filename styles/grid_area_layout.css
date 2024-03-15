@@ -17,6 +17,14 @@
     grid-area: navbar;
 }
 
+.navbar>ul {
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
 .main {
     grid-area: main;
 }
@@ -55,5 +63,22 @@
             "main"
             "footer"
         ;
+    }
+}
+
+/* Medium device responsive */
+@media screen and (min-width:576px) and (max-width: 992px) {
+    .container {
+        grid-template-areas:
+            "header    header  header"
+            "navbar    navbar  navbar"
+            "sidebar   main    main"
+            "advertise footer  footer"
+        ;
+    }
+
+    .navbar ul {
+        display: flex;
+        justify-content: space-around;
     }
 }
